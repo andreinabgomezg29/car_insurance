@@ -1,4 +1,6 @@
-export class SuperSale extends Product {
+const Product = require('./product');
+
+class SuperSale extends Product {
   constructor(name, sellIn, price) {
     super(name, sellIn, price);
   }
@@ -27,3 +29,5 @@ export class SuperSale extends Product {
     super.getRealPrice(price);
   }
 }
+
+module.exports = SuperSale;

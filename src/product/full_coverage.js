@@ -1,4 +1,6 @@
-export class FullCoverage extends Product {
+const Product = require('./product');
+
+class FullCoverage extends Product {
   constructor(name, sellIn, price) {
     super(name, sellIn, price);
   }
@@ -20,3 +22,5 @@ export class FullCoverage extends Product {
     super.getRealPrice(price);
   }
 }
+
+module.exports = FullCoverage;
